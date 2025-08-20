@@ -1,0 +1,41 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+}
+.item {
+  position: relative;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 10px 36px 10px 12px;
+  cursor: pointer;
+  background: white;
+}
+.item:hover {
+  border-color: #cfd8dc;
+}
+.item.selected {
+  border-color: #1976d2;
+  box-shadow: 0 0 0 3px rgba(25,118,210,0.12);
+}
+.title {
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 4px;
+}
+.snippet {
+  color: #616161;
+  font-size: 0.92rem;
+}
+.delete {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: #ffeb3b;
+  color: #424242;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
